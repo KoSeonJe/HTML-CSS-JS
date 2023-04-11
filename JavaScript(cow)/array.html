@@ -1,0 +1,16 @@
+<script>
+  const arr = ['가', '라', '다', '라', '마', '라'];
+  while (arr.includes('라')) {
+    const index = arr.indexOf('라');
+    arr.splice(index, 1);
+  }
+  console.log(arr);
+
+  const arr2 = ['가', '라', '다', '라', '마', '라'];
+  let index = arr2.indexOf('라');
+  while (index > -1) {
+    arr2.splice(index, 1);
+    index = arr2.indexOf('라');
+  }
+  console.log(arr2);
+</script>

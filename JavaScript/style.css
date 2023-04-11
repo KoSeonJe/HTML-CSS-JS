@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+body {
+  font-family: 'Nanum Pen Script';
+
+  display: flex;
+  flex-direction: row;
+}
+#profile {
+  padding-top: 50px;
+  padding-left: 185px;
+  padding-right: 100px;
+  background: linear-gradient(
+    rgb(205, 133, 63),
+    rgb(210, 180, 140),
+    rgb(250, 248, 220)
+  );
+  font-size: 40px;
+}
+.pcontent {
+  visibility: hidden;
+}
+.icontent {
+  visibility: hidden;
+}
+#Interesting {
+  padding-top: 50px;
+  padding-left: 200px;
+  padding-right: 200px;
+  background: linear-gradient(
+    rgb(205, 133, 63),
+    rgb(210, 180, 140),
+    rgb(250, 248, 220)
+  );
+  font-size: 40px;
+}
+#mainContent {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcontainer {
+  height: 300px;
+  width: 200px;
+  margin-top: 20px;
+}
+#slefimg {
+  object-fit: cover;
+  height: 300px;
+  width: 200px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.texttag {
+  text-align: center;
+}
+button {
+  border: 3px solid #ce6d39;
+  border-radius: 5px;
+  background-color: #ce6d39;
+  color: #b8b8b8;
+  font-size: 18px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./introduction.js"></script>
+    <style></style>
+    <title>자기소개</title>
+  </head>
+  <body id="top">
+    <div id="profile">
+      <div id="profilecontainer">
+        <h2 class="pcontent">profile</h2>
+        <hr class="pcontent" />
+        <p class="pcontent">이름 : 고선제</p>
+        <p class="pcontent">성별 : 남</p>
+        <p class="pcontent">대학교 : 명지대학교</p>
+        <p class="pcontent">생년월일 : 2001.12.22</p>
+        <p class="pcontent">전화번호 : 010-3926-1344</p>
+        <p class="pcontent">이메일 : kosunje1344@naver.com</p>
+      </div>
+    </div>
+    <div id="mainContent">
+      <div class="button">
+        <button id="profilebutton">Profile</button>
+        <button id="interestingbutton">Interesting</button>
+      </div>
+      <div class="imgcontainer">
+        <img
+          src="./KakaoTalk_20230408_210131408.jpg"
+          alt=""
+          id="slefimg"
+          class="circle responsive-img"
+        />
+      </div>
+      <div class="container">
+        <h2 class="texttag">안녕하세요!</h2>
+        <h4 class="texttag">융합소프트웨어학과 20학번 고선제입니다!</h4>
+        <a href=""></a>
+      </div>
+    </div>
+    <div id="Interesting">
+      <h2 class="icontent">Interesting</h2>
+      <hr class="icontent" />
+      <p class="icontent">취미 : 운동, 유튜브보기</p>
+      <p class="icontent">좋아하는 것 : 코딩하기, 카페라떼</p>
+      <p class="icontent">싫어하는 것 : 코딩하기, 비</p>
+      <p class="icontent">장점 : 열정</p>
+      <p class="icontent">단점 : 게으름</p>
+    </div>
+
+    <script>
+      const $profile = document.getElementById('profilebutton');
+      const $interesting = document.getElementById('interestingbutton');
+      let targetprofile = document.getElementsByClassName('pcontent');
+      let targetinteresting = document.getElementsByClassName('icontent');
+      console.log(targetprofile);
+      console.log(targetinteresting);
+
+      $profile.addEventListener('click', onProfile);
+      $interesting.addEventListener('click', onInteresting);
+    </script>
+  </body>
+</html>
